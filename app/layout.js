@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-    title: "Portfolio de Goyo Cancio | Desarrollador de Software",
+    title: "Portfolio de L.Sergio Camacho | Desarrollador de Software",
     description:
-        "Portfolio profesional de Goyo Cancio, desarrollador de software con experiencia en desarrollo web y aplicaciones móviles.",
+        "Portfolio profesional de L.Sergio Camacho, Tecnico IT y desarrollador de software con experiencia en desarrollo web y aplicaciones Python.",
 };
 
 export default function RootLayout({ children }) {
