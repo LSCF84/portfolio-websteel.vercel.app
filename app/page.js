@@ -7,7 +7,7 @@ export default function Home() {
     const experiences = [
         {
             title: "Técnico IT Nivel 3 → Nivel 4",
-            company: "Microsyscom",
+            company: "Grupo Microsyscom",
             period: "Nov. 2020 – Mar. 2025",
             description: "",
             // "description: "Optimización de Soporte Técnico: Liderazgo en la implementación y mantenimiento de un sistema de gestión de tickets avanzado, logrando optimizar significativamente la gestión de solicitudes de soporte técnico y mejorar los tiempos de respuesta. Modernización de Infraestructura de Red: Revisión y mejora integral de la infraestructura de red, incluyendo la evaluación, selección y migración exitosa a nuevas operadoras de fibra y la implementación de sistemas firewall robustos, fortaleciendo la conectividad y la seguridad perimetral. Expansión de Servicios IT: Ampliación y configuración estratégica de la plataforma de virtualización, lo que permitió la incorporación de nuevos servicios internos críticos y mejoró la eficiencia y capacidad de respuesta general de la infraestructura IT. Fortalecimiento de la Seguridad: Administración proactiva de identidades y gestión segura de credenciales, elevando la política de seguridad de la información de la empresa y minimizando riesgos. Garantía de Continuidad Operativa: Resolución experta de incidencias de Nivel 3 y 4 en entornos críticos, asegurando la continuidad operativa y minimizando el tiempo de inactividad de los sistemas esenciales para el negocio.",
@@ -387,6 +387,7 @@ Los dos primeros que se presentan (Inforusia.com y kfibergroup.com) fueron reali
         </div>
     );
 }
+
 
 
 
