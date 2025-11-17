@@ -357,7 +357,7 @@ export default function Home() {
                     <p className="text-xs md:text-base mb-2 text-justify">
                     De forma paralela a mis trabajos, he desarrollado proyectos personales para aplicar mis conocimientos y probar nuevas tecnologías.
 
-Los dos primeros que se presentan (Inforusia.com y kfibergroup.com) fueron realizados para la consultoría KF Ibergroup. Aunque ya no están en línea, se conservan y pueden consultarse en Internet Archive. Actualmente, sigo trabajando en proyectos para diversas asociaciones sin ánimo de lucro.
+Los dos primeros que se presentan (Inforusia.com y kfibergroup.com) fueron realizados para la consultoría KF Ibergroup. Aunque ya no están en línea, se conservan y pueden consultarse en Internet Archive. Actualmente, sigo trabajando en proyectos para una asociación sin ánimo de lucro.
                     </p>
                     <p className="text-xs md:text-base mb-8  text-justify">
                         Aquí puedes ver algunos de ellos:
@@ -387,4 +387,5 @@ Los dos primeros que se presentan (Inforusia.com y kfibergroup.com) fueron reali
         </div>
     );
 }
+
 
