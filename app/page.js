@@ -17,8 +17,10 @@ export default function Home() {
                 "Configuración de plataforma de virtualización",
                 "Administración de identidades y credenciales",
                 "Automatización de tareas repetitivas",
+                "Gestión de CPD VMWARE",
+                "Gestión de CPD VMWARE",
             ],
-            technologies: ["Sistemas de gestión de tickets", "Firewall", "Virtualización", "Automatización"],
+            technologies: ["Sistemas de gestión de tickets", "Firewall","CPD", "Virtualización", "Automatización"],
             image: "/company_logo/Microsyscom_generico.png",
         },
         // {
@@ -398,6 +400,7 @@ Los dos primeros que se presentan (Inforusia.com y kfibergroup.com) fueron reali
         </div>
     );
 }
+
 
 
 
