@@ -22,13 +22,13 @@ export default function AvisoLegalPage() {
                 </section>
 
                 <section id="garantias" className="mb-4">
-                    <h2 className="section-title">2. Exclusión de Garantías (Disclaimer)</h2>
-                    <p>El código y los proyectos mostrados en este portafolio y en el repositorio asociado son presentados en su estado actual ("as is"). Se informa que:</p>
-                    <ul>
-                        <li>**Carácter Demostrativo:** La mayoría de los proyectos son pruebas de concepto o versiones simplificadas. No se garantiza su rendimiento, seguridad o que estén libres de errores.</li>
-                        <li>**Responsabilidad del Uso:** El titular no se hace responsable del uso, ni de las consecuencias derivadas, que el visitante pueda darle al código fuente, los proyectos, o cualquier otra información técnica aquí expuesta.</li>
-                    </ul>
-                </section>
+    <h2 className="section-title">2. Exclusión de Garantías (Disclaimer)</h2>
+    <p>El código y los proyectos mostrados en este portafolio y en el repositorio asociado son presentados en su estado actual (&quot;as is&quot;). Se informa que:</p>
+    <ul>
+        <li>**Carácter Demostrativo:** La mayoría de los proyectos son pruebas de concepto o versiones simplificadas. No se garantiza su rendimiento, seguridad o que estén libres de errores.</li>
+        <li>**Responsabilidad del Uso:** El titular no se hace responsable del uso, ni de las consecuencias derivadas, que el visitante pueda darle al código fuente, los proyectos, o cualquier otra información técnica aquí expuesta.</li>
+    </ul>
+</section>
                 
                 {/* Añade secciones adicionales como: Propiedad Intelectual, Contacto, etc. */}
 
