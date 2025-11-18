@@ -1,5 +1,3 @@
-// app/aviso-legal/page.js
-
 import React from 'react';
 
 export default function AvisoLegalPage() {
