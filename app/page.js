@@ -296,17 +296,31 @@ export default function Home() {
 
     ];
 
-    // Sample project data
+   // Sample project data (Proyectos Antiguos)
     const projects = [
         {
             image: "/projects_logo/kf.png",
             domain: "https://web.archive.org/web/20110208232115/http://www.kfibergroup.com/",
+            name: "KFibergroup.com", // Añadido para mejor uso en el ProjectItem
         },
         {
             image: "/projects_logo/Inforusia.png",
             domain: "https://web.archive.org/web/20020630234856/http://www.inforusia.com/",
+            name: "Inforusia.com", // Añadido para mejor uso en el ProjectItem
         },
+    ];
 
+    // 🟢 NUEVOS PROYECTOS (Portafolios Actuales) 🟢
+    const currentPortfolios = [
+        {
+            // Puedes usar una imagen genérica o la imagen de Jrdev si la tienes
+            image: "/projects_logo/websteel.png", 
+            domain: "https://jrdev-lscf.vercel.app/",
+            name: "Jrdev Portafolio", // Nombre descriptivo
+        },
+    ];
+
+    // ... (continúa con el resto de tu función o componente)
         // {
         //     image: "/projects_logo/blockheadapp.png",
         //     domain: "https://taskmanager.goyocancio.es",
@@ -349,7 +363,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Projects Section */}
+          {/* Projects Section */}
             <section id="projects">
                 <div className="container mx-auto py-12 px-10">
                     <div className="text-center mb-6">
@@ -358,25 +372,53 @@ export default function Home() {
                         </h2>
                     </div>
 
+                    {/* Descripción principal */}
                     <p className="text-xs md:text-base mb-2 text-justify">
                     De forma paralela a mis trabajos, he desarrollado proyectos personales para aplicar mis conocimientos y probar nuevas tecnologías.
 
 Los dos primeros que se presentan (Inforusia.com y kfibergroup.com) fueron realizados para la consultoría KF Ibergroup. Aunque ya no están en línea, se conservan y pueden consultarse en Internet Archive. Actualmente, sigo trabajando en proyectos para una asociación sin ánimo de lucro.
                     </p>
-                    <p className="text-xs md:text-base mb-8  text-justify">
+                    
+                    {/* -------------------------------------------------- */}
+                    {/* SECCIÓN 1: PROYECTOS ANTIGUOS            */}
+                    {/* -------------------------------------------------- */}
+
+                    <p className="text-xs md:text-base mb-2 mt-4 text-justify">
                         Aquí puedes ver proyectos antiguos:
                     </p>
 
-                    {/* Projects row */}
-                    <div className="flex flex-wrap gap-6 md:gap-8 justify-center">
-                        {/* Restore the map */}
+                    {/* Projects row (Antiguos) */}
+                    <div className="flex flex-wrap gap-6 md:gap-8 justify-center mb-10">
                         {projects.map((project, index) => {
                             if (!project || !project.image || !project.domain) {
-                                return null; // Keep the check and null return
+                                return null;
                             }
                             return (
                                 <div key={index} className="">
                                     <ProjectItem project={project} />
+                                </div>
+                            );
+                        })}
+                    </div>
+                    
+                    {/* -------------------------------------------------- */}
+                    {/* 🟢 SECCIÓN 2: PORTAFOLIOS ACTUALES 🟢          */}
+                    {/* -------------------------------------------------- */}
+
+                    <p className="text-xs md:text-base mb-8 text-justify">
+                        Y aquí mi **Portafolio de Desarrollador Junior** actual:
+                    </p>
+
+                    {/* Projects row (Actuales) */}
+                    <div className="flex flex-wrap gap-6 md:gap-8 justify-center">
+                        {currentPortfolios.map((project, index) => {
+                             if (!project || !project.image || !project.domain) {
+                                return null;
+                            }
+                            return (
+                                <div key={`current-${index}`} className="">
+                                    {/* Reutiliza el ProjectItem para mantener el estilo */}
+                                    <ProjectItem project={project} /> 
                                 </div>
                             );
                         })}
