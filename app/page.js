@@ -349,74 +349,40 @@ export default function Home() {
                 </div>
             </section>
 
-          {/* Projects Section */}
-
+            {/* Projects Section */}
             <section id="projects">
-
                 <div className="container mx-auto py-12 px-10">
-
                     <div className="text-center mb-6">
-
                         <h2 className="text-2xl md:text-4xl font-bold">
-
                             Proyectos Personales
-
                         </h2>
-
                     </div>
-
-
 
                     <p className="text-xs md:text-base mb-2 text-justify">
-
                     De forma paralela a mis trabajos, he desarrollado proyectos personales para aplicar mis conocimientos y probar nuevas tecnologías.
 
-
-
 Los dos primeros que se presentan (Inforusia.com y kfibergroup.com) fueron realizados para la consultoría KF Ibergroup. Aunque ya no están en línea, se conservan y pueden consultarse en Internet Archive. Actualmente, sigo trabajando en proyectos para una asociación sin ánimo de lucro.
-
                     </p>
-
                     <p className="text-xs md:text-base mb-8  text-justify">
-
                         Aquí puedes ver proyectos antiguos:
-
                     </p>
-
-
 
                     {/* Projects row */}
-
                     <div className="flex flex-wrap gap-6 md:gap-8 justify-center">
-
                         {/* Restore the map */}
-
                         {projects.map((project, index) => {
-
                             if (!project || !project.image || !project.domain) {
-
                                 return null; // Keep the check and null return
-
                             }
-
                             return (
-
                                 <div key={index} className="">
-
                                     <ProjectItem project={project} />
-
                                 </div>
-
                             );
-
                         })}
-
                     </div>
-
                 </div>
-
             </section>
-</section>
 
             <footer className="text-center text-xs md:text-sm text-gray-500">
     {/* Contenido existente del copyright */}
@@ -436,7 +402,3 @@ Los dos primeros que se presentan (Inforusia.com y kfibergroup.com) fueron reali
         </div>
     );
 }
-
-
-
-
