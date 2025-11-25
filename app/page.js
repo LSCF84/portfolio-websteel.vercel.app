@@ -17,7 +17,6 @@ export default function Home() {
                 "Administración de identidades y credenciales",
                 "Automatización de tareas repetitivas",
                 "Gestión de CPD VMWARE",
-                "Gestión de CPD VMWARE",
                 "Implementación de plataformas de soporte y asistencia remota para clientes corporativos",
             ],
             technologies: ["Gestión de Incidencias (Ticketing)", "Ciberseguridad y Seguridad Perimetral","CPD","Plataformas de Asistencia Remota", "Virtualización", "Automatización"],
@@ -73,9 +72,24 @@ export default function Home() {
     // 3. DATA: PORTAFOLIOS ACTUALES 🟢
     const currentPortfolios = [
         {
-            image: "/projects_logo/websteel.png", // Asegúrate de tener esta imagen
+            image: "/projects_logo/jrdev-lscf.vercel.app.png", 
             domain: "https://jrdev-lscf.vercel.app/",
-            name: "Jrdev Portafolio",
+            name: "Portafolio Desarrollador Junior",
+        },
+        {
+            image: "/projects_logo/portfolio-main-lscf.vercel.app.png", 
+            domain: "https://portfolio-main-lscf.vercel.app/",
+            name: "Portafolio Principal (Main)",
+        },
+        {
+            image: "/projects_logo/portfolio-websteel.vercel.app.png", 
+            domain: "https://portfolio-websteel.vercel.app/",
+            name: "Portafolio Websteel",
+        },
+        {
+            image: "/projects_logo/lscf-central.vercel.app.png", 
+            domain: "https://lscf-central.vercel.app/",
+            name: "LSCF Central App",
         },
     ];
 
@@ -146,7 +160,7 @@ Los dos primeros que se presentan (Inforusia.com y kfibergroup.com) fueron reali
                     {/* -------------------------------------------------- */}
 
                     <p className="text-xs md:text-base mb-8 text-justify">
-                        Y aquí mi **Portafolio de Desarrollador Junior** actual:
+                        Y aquí mi Portafolio de Desarrollador Junior actual:
                     </p>
 
                     {/* Projects row (Actuales) */}
