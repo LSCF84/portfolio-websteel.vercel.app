@@ -1,46 +1,83 @@
-# Plantilla de Portfolio Web Personal
+# ⚙️ LSCF84 - Portafolio WebSteel
 
-Esta es una plantilla de portfolio web personal desarrollada con [Next.js](https://nextjs.org), diseñada para ser fácilmente personalizable y reutilizable.
+> "Mi espacio digital personal. Una muestra de mis habilidades y proyectos con un diseño sólido y moderno."
 
-Si estás viendo este repositorio a través de mi canal de YouTube, ¡bienvenido! Esta plantilla es parte de un tutorial donde te muestro cómo crear tu propio portfolio web profesional. Puedes usar esta plantilla como base para tu propio proyecto.
+Este repositorio contiene el código fuente de mi **Portafolio Personal**, desplegado en Vercel. Este sitio está diseñado para exhibir mis habilidades técnicas, mis proyectos más destacados y mi experiencia profesional de una manera limpia y eficiente.
 
-## ✨ Características
+---
 
--   **Diseño Responsivo:** Experiencia de usuario perfecta en todos los dispositivos
--   **Secciones Personalizables:** Presentación, proyectos, habilidades, experiencia y contacto
--   **Fácil de Personalizar:** Estructura clara y documentada para modificar según tus necesidades
+## 🚀 Ver en Vivo
+
+Puedes acceder a la versión en producción del portafolio en el siguiente enlace:
+
+* **Sitio Web:** **`https://portfolio-websteel.vercel.app/`**
+
+---
 
 ## 🛠️ Tecnologías Utilizadas
 
--   **Frontend:** Next.js, React, CSS Modules/Tailwind CSS
--   **Despliegue:** Vercel
+Este proyecto se ha construido con un enfoque en la modernidad, rendimiento y la experiencia del desarrollador.
 
-## 🚀 Comenzando
+**Frontend:**
+* **[RELLENAR: Ej. Next.js / React / Vue.js]** - Framework principal para la interfaz de usuario.
+* **[RELLENAR: Ej. TypeScript / JavaScript]** - Lenguaje de programación.
+* **[RELLENAR: Ej. Tailwind CSS / SCSS Modules]** - Para el estilo y la implementación del diseño "WebSteel".
 
-Para usar esta plantilla en tu propio proyecto:
+**Despliegue y Herramientas:**
+* **Vercel:** Plataforma de despliegue continuo y hosting.
+* **Git / GitHub:** Control de versiones.
+* **[RELLENAR: Ej. Alguna herramienta de animación, como Framer Motion o GSAP]**
 
-1. Clona este repositorio
-2. Instala las dependencias:
+---
+
+## 📦 Instalación y Uso Local
+
+Sigue estos pasos para obtener una copia local del proyecto en funcionamiento.
+
+### Requisitos Previos
+
+Necesitas tener instalado:
+* [Node.js](https://nodejs.org/) (se recomienda la versión LTS)
+* [npm] o [yarn] (gestor de paquetes)
+* [Git]
+
+### Pasos de Configuración
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/LSCF84/portfolio-websteel.vercel.app.git](https://github.com/LSCF84/portfolio-websteel.vercel.app.git)
+    ```
+
+2.  **Navegar al directorio del proyecto:**
+    ```bash
+    cd portfolio-websteel.vercel.app
+    ```
+
+3.  **Instalar las dependencias:**
     ```bash
     npm install
+    # o 
+    yarn install
     ```
-3. Inicia el servidor de desarrollo:
+
+4.  **Iniciar el servidor de desarrollo:**
     ```bash
     npm run dev
+    # o 
+    yarn dev
     ```
 
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
+El portafolio estará disponible en `http://localhost:[RELLENAR PUERTO, ej: 3000]`.
 
-## 📚 Recursos Adicionales
+---
 
--   [Documentación de Next.js](https://nextjs.org/docs)
--   [Aprende Next.js](https://nextjs.org/learn)
--   [Documentación de Tailwind CSS](https://tailwindcss.com/docs)
+## 🤝 Contribuciones
 
-## 🚀 Despliegue
+Las contribuciones, informes de errores y sugerencias son bienvenidas. Siéntete libre de abrir un *Issue* o enviar un *Pull Request*.
 
-La forma más sencilla de desplegar tu portfolio es utilizando [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+---
 
-## 📝 Licencia
+## 📬 Contacto
 
-MIT - Puedes usar esta plantilla libremente para tus proyectos personales o comerciales.
+* **GitHub:** [@LSCF84](https://github.com/LSCF84)
+* **Correo Electrónico:** l.sergio.camacho.fernandez@gmail.com
