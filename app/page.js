@@ -81,12 +81,7 @@ export default function Home() {
             domain: "https://portfolio-main-lscf.vercel.app/",
             name: "Portafolio Principal (Main)",
         },
-        {
-            image: "/projects_logo/portfolio-websteel.vercel.app.png", 
-            domain: "https://portfolio-websteel.vercel.app/",
-            name: "Portafolio Websteel",
-        },
-        {
+       {
             image: "/projects_logo/lscf-central.vercel.app.png", 
             domain: "https://lscf-central.vercel.app/",
             name: "LSCF Central App",
