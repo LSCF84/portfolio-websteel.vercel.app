@@ -1,4 +1,5 @@
 import React from 'react';
+// La importación de Link ha sido eliminada ya que Next.js no puede resolverla en este entorno.
 
 // Este componente está diseñado para funcionar como la página 404 personalizada en Next.js.
 // Para el App Router, debe ser renombrado a 'not-found.jsx' y colocado en la carpeta 'app/'.
@@ -28,10 +29,9 @@ export default function NotFound() {
         </p>
 
         {/* Botón de Llamada a la Acción (Volver al Inicio) */}
-        {/* Nota: Usamos una etiqueta <a> simple, ya que los links de Next.js (Link)
-            no son necesarios para la página 404 a la raíz. */}
+        {/* CORRECCIÓN: Revertimos al elemento <a> nativo, ya que la importación de 'next/link' falló. */}
         <a 
-          href="/" 
+          href="/" // Usamos <a> para una navegación simple a la raíz.
           className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium text-white transition duration-300 rounded-lg shadow-lg bg-sky-500 hover:bg-sky-600 focus:outline-none focus:ring-4 focus:ring-sky-500/50 transform hover:scale-[1.02] active:scale-[0.98]"
         >
           {/* Icono de Casa (Home) */}
