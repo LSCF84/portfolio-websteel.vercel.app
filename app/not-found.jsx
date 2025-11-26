@@ -43,7 +43,7 @@ export default function NotFound() {
         
         {/* Enlace de Soporte */}
         <p className="mt-8 text-sm text-gray-500">
-          Si crees que los aliens son culpables, puedes <a href="mailto:tucorreo@ejemplo.com" className="text-sky-600 hover:text-sky-700 underline font-semibold">reportar el error aquí</a>.
+          Si crees que los aliens son culpables, puedes <a href="mailto:l.sergio.camacho.fernandez@gmail.com" className="text-sky-600 hover:text-sky-700 underline font-semibold">reportar el error aquí</a>.
         </p>
       </div>
 
