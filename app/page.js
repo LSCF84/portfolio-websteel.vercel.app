@@ -83,8 +83,8 @@ export default function Home() {
         },
        {
             image: "/projects_logo/lscf-central.vercel.app.png", 
-            domain: "https://lscf-central.vercel.app/",
-            name: "LSCF Central App",
+            domain: "https://lscf-coredigital.vercel.app/",
+            name: "LSCF Core Digital",
         },
     ];
 
