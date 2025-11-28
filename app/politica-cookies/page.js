@@ -11,11 +11,12 @@ export const metadata = {
 
 const CookiePolicyPage = () => {
   // Definición de colores principales y estilos usando Tailwind CSS
-  const primaryColor = 'text-indigo-600 dark:text-indigo-400';
-  const containerBg = 'bg-white dark:bg-gray-800';
-  const sectionBg = 'bg-gray-100 dark:bg-gray-700';
-  const textColor = 'text-gray-700 dark:text-gray-300';
-  const titleColor = 'text-gray-900 dark:text-white';
+  // AJUSTE DE ESTILOS PARA TEMA OSCURO
+  const primaryColor = 'text-indigo-400 dark:text-indigo-400'; // Enlaces en índigo claro
+  const containerBg = 'bg-gray-100 dark:bg-gray-900'; // Fondo general muy oscuro o muy claro
+  const sectionBg = 'bg-white dark:bg-gray-800'; // Fondo del contenido de la política (oscuro)
+  const textColor = 'text-gray-700 dark:text-gray-300'; // Texto claro
+  const titleColor = 'text-gray-900 dark:text-white'; // Títulos en blanco
   const lastUpdated = "27 de noviembre de 2025"; 
 
   return (
@@ -79,7 +80,8 @@ const CookiePolicyPage = () => {
             Usted tiene la opción de permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones de su navegador.
           </p>
           <p className={textColor}>
-            Puede configurar sus preferencias específicas utilizando el botón &quotConfigurar&quot en el banner de consentimiento que aparece al acceder a nuestra web. Si desea eliminar cookies existentes, puede hacerlo directamente a través de las opciones de su navegador:
+            {/* CORRECCIÓN: Reemplazamos la comilla doble " por la entidad HTML &quot; */}
+            Puede configurar sus preferencias específicas utilizando el botón **&quot;Configurar&quot;** en el banner de consentimiento que aparece al acceder a nuestra web. Si desea eliminar cookies existentes, puede hacerlo directamente a través de las opciones de su navegador:
           </p>
           <ul className={`list-disc list-inside ml-5 mt-4 ${textColor}`}>
             <li>**Chrome:** <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" className={primaryColor}>Guía de Google Chrome</a></li>
