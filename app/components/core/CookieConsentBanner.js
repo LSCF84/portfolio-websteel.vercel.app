@@ -6,17 +6,16 @@ import Link from 'next/link';
 // Clave única para guardar el consentimiento en localStorage
 const CONSENT_KEY = 'cookie_consent_websteel';
 
-// Valores posibles del consentimiento
-type ConsentStatus = 'granted' | 'denied' | null;
-
-const CookieConsentBanner: React.FC = () => {
-  const [consent, setConsent] = useState<ConsentStatus>(null);
+// Componente funcional en JavaScript (sin anotaciones de tipo)
+const CookieConsentBanner = () => {
+  // El estado será 'granted', 'denied' o null
+  const [consent, setConsent] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
 
   // 1. Cargar el estado del consentimiento al montar el componente
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const storedConsent = localStorage.getItem(CONSENT_KEY) as ConsentStatus;
+      const storedConsent = localStorage.getItem(CONSENT_KEY);
       setConsent(storedConsent);
       // Mostrar el banner solo si el consentimiento no ha sido dado previamente
       if (!storedConsent) {
@@ -26,28 +25,26 @@ const CookieConsentBanner: React.FC = () => {
   }, []);
 
   // 2. Manejar la acción de Aceptar o Denegar
-  const handleConsent = (status: ConsentStatus) => {
+  const handleConsent = (status) => {
     if (typeof window !== 'undefined') {
       localStorage.setItem(CONSENT_KEY, status || 'denied'); // Guardar 'denied' si es null o no especificado
       setConsent(status);
       setIsVisible(false);
 
-      // Si se acepta ('granted'), se podría cargar aquí scripts de terceros (como Google Analytics)
-      // Ejemplo: si se acepta, podrías disparar una función para cargar tu script de GA.
       if (status === 'granted') {
         console.log('Consentimiento de cookies ACEPTADO. Se cargan scripts de análisis.');
-        // Aquí iría la lógica para cargar Google Analytics
       } else {
         console.log('Consentimiento de cookies DENEGADO o no especificado.');
       }
     }
   };
   
-  // Función placeholder para una posible configuración avanzada futura
+  // Función placeholder para la configuración
   const handleConfigure = () => {
-      // Por ahora, solo simula el guardado de configuración (equivalente a denegar, pero más explícito)
+      // Por ahora, solo simula el guardado de configuración (equivalente a denegar)
       handleConsent('denied');
-      alert("La funcionalidad de configuración avanzada aún no está implementada. Por defecto, se ha guardado su preferencia de privacidad (Denegada).");
+      // ¡IMPORTANTE! Reemplazamos alert() por console.error
+      console.error("La funcionalidad de configuración avanzada aún no está implementada. Por defecto, se ha guardado su preferencia de privacidad (Denegada).");
   }
 
   if (!isVisible) return null;
