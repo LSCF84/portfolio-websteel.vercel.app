@@ -11,18 +11,27 @@ export const metadata = {
 
 const CookiePolicyPage = () => {
   // Definición de colores principales y estilos usando Tailwind CSS
-  // AJUSTE DE ESTILOS PARA TEMA OSCURO
+  // AJUSTE DE ESTILOS PARA TEMA OSCURO - COINCIDIENDO CON LA ESTÉTICA AZUL OSCURO DE LA POLÍTICA
   const primaryColor = 'text-indigo-400 dark:text-indigo-400'; // Enlaces en índigo claro
-  const containerBg = 'bg-gray-100 dark:bg-gray-900'; // Fondo general muy oscuro o muy claro
-  const sectionBg = 'bg-white dark:bg-gray-800'; // Fondo del contenido de la política (oscuro)
-  const textColor = 'text-gray-700 dark:text-gray-300'; // Texto claro
+  // El fondo general del layout es el que da el negro/gris oscuro (dark:bg-gray-900).
+  const containerBg = 'bg-gray-100 dark:bg-gray-900'; 
+  
+  // Fondo del contenido de la política: El color oscuro de la tarjeta/sección en tu imagen.
+  const sectionBg = 'bg-white dark:bg-gray-800'; 
+  
+  // Texto y títulos: Blancos o muy claros para alto contraste
+  const textColor = 'text-gray-700 dark:text-gray-300'; // Texto de cuerpo en gris claro
   const titleColor = 'text-gray-900 dark:text-white'; // Títulos en blanco
   const lastUpdated = "27 de noviembre de 2025"; 
 
   return (
     // Usa un contenedor flexbox para asegurar que el contenido se centre vertical y horizontalmente
+    // Ajustamos el fondo del div principal para forzar el color de la web si no viene del layout
     <div className={`min-h-screen flex flex-col items-center py-16 px-4 sm:px-6 lg:px-8 ${containerBg}`}>
-      <div className={`max-w-4xl w-full p-8 sm:p-10 rounded-xl shadow-2xl transition-colors duration-300 ${sectionBg}`}>
+      <div 
+        // El max-w-4xl centrará la tarjeta principal
+        className={`max-w-4xl w-full p-8 sm:p-10 rounded-xl shadow-2xl transition-colors duration-300 ${sectionBg}`}
+      >
         
         <Link href="/" className={`inline-flex items-center ${primaryColor} mb-6 hover:underline`}>
             {/* Icono de flecha SVG simple */}
@@ -95,7 +104,7 @@ const CookiePolicyPage = () => {
         <section>
           <h2 className={`text-2xl font-bold mb-3 ${titleColor}`}>4. Contacto</h2>
           <p className={textColor}>
-            Si tiene alguna pregunta sobre esta Política de Cookies, puede contactarnos a través del correo electrónico: <a href="mailto:contacto@websteel.com" className={primaryColor}>contacto@websteel.com</a> (Reemplace esto con su correo real).
+            Si tiene alguna pregunta sobre esta Política de Cookies, puede contactarnos a través del correo electrónico: <a href="mailto:l.sergio.camacho.fernandez@gmail.com" className={primaryColor}>l.sergio.camacho.fernandez@gmail.com</a> (Reemplace esto con su correo real).
           </p>
         </section>
 
