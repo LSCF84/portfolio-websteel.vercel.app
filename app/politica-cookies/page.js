@@ -79,7 +79,7 @@ const CookiePolicyPage = () => {
             Usted tiene la opción de permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones de su navegador.
           </p>
           <p className={textColor}>
-            Puede configurar sus preferencias específicas utilizando el botón **"Configurar"** en el banner de consentimiento que aparece al acceder a nuestra web. Si desea eliminar cookies existentes, puede hacerlo directamente a través de las opciones de su navegador:
+            Puede configurar sus preferencias específicas utilizando el botón &quotConfigurar&quot en el banner de consentimiento que aparece al acceder a nuestra web. Si desea eliminar cookies existentes, puede hacerlo directamente a través de las opciones de su navegador:
           </p>
           <ul className={`list-disc list-inside ml-5 mt-4 ${textColor}`}>
             <li>**Chrome:** <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer" className={primaryColor}>Guía de Google Chrome</a></li>
