@@ -1,12 +1,10 @@
 import Link from 'next/link';
-import type { Metadata } from 'next';
 
 // Clave utilizada para el almacenamiento local del consentimiento
-// Esta clave debe ser la misma usada en el banner.
 const CONSENT_KEY = 'cookie_consent_websteel'; 
 
 // --- METADATA ---
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Política de Cookies | WebSteel Portafolio',
   description: 'Política de uso de cookies para el portafolio personal de WebSteel.',
 };
