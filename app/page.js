@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import ExperienceItem from "./components/ExperienceItem";
 import ProjectItem from "./components/ProjectItem";
+// Importar Link de next/link si se necesita para alguna navegación interna en el futuro
+// import Link from 'next/link'; 
 
 export default function Home() {
     // 1. DATA: EXPERIENCIA LABORAL
@@ -22,7 +24,7 @@ export default function Home() {
             technologies: ["Gestión de Incidencias (Ticketing)", "Ciberseguridad y Seguridad Perimetral","CPD","Plataformas de Asistencia Remota", "Virtualización", "Automatización"],
             image: "/company_logo/Microsyscom_generico.png",
         },
-        // ... (el resto de tus experiencias)
+        // ... (el resto de tus experiencias, se mantiene la estructura)
         {
             title: "Técnico instalador",
             company: "Productos Telefónicos",
@@ -62,9 +64,9 @@ export default function Home() {
         },
         // Aquí puedes descomentar tus otros proyectos si los necesitas:
         // {
-        //     image: "/projects_logo/blockheadapp.png",
-        //     domain: "https://taskmanager.goyocancio.es",
-        //     name: "Task Manager",
+        //    image: "/projects_logo/blockheadapp.png",
+        //    domain: "https://taskmanager.goyocancio.es",
+        //    name: "Task Manager",
         // },
         // ...
     ];
