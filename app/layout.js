@@ -1,11 +1,8 @@
 import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 // IMPORTAR EL COMPONENTE DEL BANNER
-// Importación corregida: se añade la extensión .js para que el compilador lo encuentre
-// y se ajusta la ruta. Si layout.js está en /app y el componente está en /app/components/core,
-// la ruta relativa correcta es la que usa '../' si layout estuviera en un subdirectorio,
-// pero si está en /app, la ruta es:
-import CookieConsentBanner from './components/core/CookieConsentBanner.js'; 
+// ¡Esta línea es crucial! Si la borras, el banner no existe en el DOM.
+import CookieConsentBanner from './components/core/CookieConsentBanner'; 
 
 const inter = Inter({
     subsets: ["latin"],
