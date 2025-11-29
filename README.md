@@ -46,9 +46,8 @@ Necesitas tener instalado:
 * [Git]
 
 ### Pasos de Configuración
-
-1. **Clonar el repositorio:**
-  ```bash
+1.  **Clonar el repositorio:**
+    ```bash
     git clone [https://github.com/LSCF84/Portfolio.git](https://github.com/LSCF84/Portfolio.git)
     ```
 
